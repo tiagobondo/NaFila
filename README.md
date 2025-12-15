@@ -70,7 +70,7 @@ O sistema é composto por:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/nafila.git
+git clone https://github.com/tiagobondo/NaFila.git
 
 # Entrar no diretório
 cd nafila
