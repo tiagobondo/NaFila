@@ -1,0 +1,23 @@
+{
+  "name": "nafila",
+  "version": "1.0.0",
+  "description": "**NaFila** é um sistema web de gestão de filas digitais que permite que estabelecimentos organizem o atendimento e que clientes entrem na fila remotamente, aguardando no conforto das suas casas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagobondo/NaFila.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagobondo/NaFila/issues"
+  },
+  "homepage": "https://github.com/tiagobondo/NaFila#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
