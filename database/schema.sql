@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS filas (
     FOREIGN KEY (estabelecimento_id) REFERENCES estabelecimentos(id) ON DELETE CASCADE
 );
 
--- Tabela: clientes_na_fila
+
 CREATE TABLE IF NOT EXISTS clientes_na_fila (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fila_id INTEGER NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS clientes_na_fila (
     FOREIGN KEY (fila_id) REFERENCES filas(id) ON DELETE CASCADE
 );
 
--- Tabela: atendimentos (Histórico)
+
 CREATE TABLE IF NOT EXISTS atendimentos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     cliente_id INTEGER NOT NULL,
