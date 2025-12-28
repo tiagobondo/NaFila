@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
     "dev": "node --watch server"
   },
   "repository": {
@@ -26,6 +28,7 @@
     "ejs": "^3.1.10",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.0.2"
+    "mongoose": "^9.0.2",
+    "sqlite3": "^5.1.7"
   }
 }
