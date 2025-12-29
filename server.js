@@ -21,7 +21,7 @@ import http from 'http';
 dotenv.config();
 
 const PORT = 3000 || process.env.PORT
-const server = http.createServer(app); //Criando o servidor baseado no aapp
+const server = http.createServer(app); //Criando o servidor baseado no app
 
 server.listen(PORT, () => {
   console.log(`Servidor Rodando no https://localhost:${PORT}`);
