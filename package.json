@@ -2,9 +2,12 @@
   "name": "nafila",
   "version": "1.0.0",
   "description": "**NaFila** é um sistema web de gestão de filas digitais que permite que estabelecimentos organizem o atendimento e que clientes entrem na fila remotamente, aguardando no conforto das suas casas.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+    "dev": "node --watch server"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "ejs": "^3.1.10",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.0.2"
+    "mongoose": "^9.0.2",
+    "sqlite3": "^5.1.7"
   }
 }

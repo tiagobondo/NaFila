@@ -26,11 +26,6 @@ app.set('view engine', 'ejs');
   app.use('/login', indeRouter);
 */
 
-app.use('/api/auth', require('./routes/auth.routes'));
-app.use('/api/estabelecimentos',require('./routes/estabelecimento.routes'));
-app.use('/api/filas', require('./routes/fila.routes'));
-
-
 //Nossas routas
 app.use('/', indexRouter);
 
