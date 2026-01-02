@@ -1,10 +1,13 @@
 import express from 'express';
 import cors from 'cors';
-
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-
 import indexRouter from './routes/index.js';
+
+import authRoutes from './routes/auth.routes.js';
+import filaRoutes from './routes/fila.routes.js';
+import estabelecimentoRoutes from './routes/estabelecimento.routes.js';
+
 
 //Configuracao para acesso ao caminho
 const pathFile = fileURLToPath(import.meta.url);
@@ -26,6 +29,15 @@ app.set('view engine', 'ejs');
   app.use('/login', indeRouter);
 */
 
+<<<<<<< HEAD
+=======
+app.use('/api/auth', authRoutes);
+app.use('/api/filas', filaRoutes);
+app.use('/api/estabelecimentos', estabelecimentoRoutes);
+
+
+
+>>>>>>> 1a1fc7f (correção de um erro de resolução de módulos, garantindo compatibilidade com ES MODULES)
 //Nossas routas
 app.use('/', indexRouter);
 

@@ -1,8 +1,6 @@
-exports.chamarProximo = (req, res) => {
-  const { idFila } = req.params;
-
+// chamar próximo cliente
+export const proximoCliente = (req, res) => {
   res.json({
-    mensagem: 'Próximo cliente chamado',
-    fila: idFila
+    mensagem: 'Próximo cliente chamado'
   });
 };

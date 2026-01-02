@@ -1,8 +1,7 @@
-const express = require('express');
+import express from 'express';
+import { getMeuEstabelecimento } from '../controllers/estabelecimento.controllers.js';
 const router = express.Router();
-const estabelecimentoController = require('../controllers/estabelecimento.controller');
 
+router.get('/me', getMeuEstabelecimento);
 
-router.get('/me', estabelecimentoController.me);
-
-module.exports = router;
+export default router;

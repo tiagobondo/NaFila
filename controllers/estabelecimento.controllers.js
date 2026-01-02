@@ -1,5 +1,3 @@
-exports.me = (req, res) => {
-  res.json({
-    mensagem: 'Dados do estabelecimento'
-  });
+export const getMeuEstabelecimento = (req, res) => {
+  res.json({ mensagem: 'Dados do estabelecimento' });
 };
