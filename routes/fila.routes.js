@@ -1,26 +1,24 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const filaController = require('../controllers/fila.controller');
-const clienteController = require('../controllers/cliente.controller');
-const atendimentoController = require('../controllers/atendimento.controller');
-
-// criar nova fila
-router.post('/', filaController.criarFila);
-
-// listar filas do estabelecimento
-router.get('/', filaController.listarFilas);
-
-// buscar fila pelo código
-router.get('/:codigo', filaController.buscarPorCodigo);
-
-// cliente entra na fila
-router.post('/:idFila/entrar', filaController.entrarNaFila);
-
-// ver posição do cliente
-router.get('/:idFila/posicao/:idCliente', filaController.verPosicao);
-
-// chamar próximo cliente
-router.post('/:idFila/proximo', filaController.chamarProximo);
 
 
-module.exports = router;
+import {
+  criarFila,
+  listarFilas,
+  getFilaByCodigo,
+  entrarNaFila,
+} from '../controllers/fila.controllers.js';
+
+import{ posicaoCliente} from '../controllers/cliente.controllers.js'
+
+import{ proximoCliente} from '../controllers/atendimento.controllers.js'
+
+// criar e listar filas
+router.post('/', criarFila);
+router.get('/', listarFilas);
+router.get('/:codigo', getFilaByCodigo);
+router.post('/:idFila/entrar', entrarNaFila);
+router.get('/:idFila/posicao/:idCliente', posicaoCliente);
+router.post('/:idFila/proximo', proximoCliente);
+
+export default router;

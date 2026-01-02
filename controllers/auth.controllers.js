@@ -1,12 +1,7 @@
-exports.registar = (req, res) => {
-  res.status(201).json({
-    mensagem: 'Estabelecimento registado'
-  });
+export const registar = (req, res) => {
+  res.json({ mensagem: 'Utilizador registado' });
 };
 
-exports.login = (req, res) => {
-  res.json({
-    mensagem: 'Login efetuado',
-    token: 'fake-token'
-  });
+export const login = (req, res) => {
+  res.json({ mensagem: 'Login efetuado' });
 };
